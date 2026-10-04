@@ -4,4 +4,7 @@ collection.set('Jack', 25);
 collection.set('Amy', 25);
 collection.set('Moron', 67);
 
-console.log(collection);
+for (let key of collection) {
+    console.log(key);
+}
+
