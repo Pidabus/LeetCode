@@ -1,0 +1,59 @@
+const text = `{
+  "queryCost": 1,
+  "latitude": 51.5064,
+  "longitude": -0.12721,
+  "resolvedAddress": "London, England, United Kingdom",
+  "address": "london",
+  "timezone": "Europe/London",
+  "tzoffset": 1,
+  "description": "Similar temperatures continuing with a chance of rain tomorrow, Tuesday & Thursday.",
+  "days": [
+    {
+      "datetime": "2024-07-06",
+      "datetimeEpoch": 1720220400,
+      "tempmax": 61.4,
+      "tempmin": 53.1,
+      "temp": 57.8,
+      "feelslikemax": 61.4,
+      "feelslikemin": 53.1,
+      "feelslike": 57.8,
+      "dew": 51.3,
+      "humidity": 79.7,
+      "precip": 0.457,
+      "precipprob": 100,
+      "precipcover": 75,
+      "preciptype": [
+        "rain"
+      ],
+      "snow": 0,
+      "snowdepth": 0,
+      "windgust": 35.3,
+      "windspeed": 21.9,
+      "winddir": 262.6,
+      "pressure": 1001.8,
+      "cloudcover": 70.5,
+      "visibility": 8.3,
+      "solarradiation": 147.5,
+      "solarenergy": 12.9,
+      "uvindex": 6,
+      "severerisk": 10,
+      "sunrise": "04:52:02",
+      "sunriseEpoch": 1720237922,
+      "sunset": "21:18:20",
+      "sunsetEpoch": 1720297100,
+      "moonphase": 0.02,
+      "conditions": "Rain, Partially cloudy",
+      "description": "Partly cloudy throughout the day with a chance of rain throughout the day.",
+      "icon": "rain",
+      "stations": [
+        "EGWU",
+        "EGLL",
+        "D5621",
+        "EGLC"
+      ]
+    }
+  ]
+}`;
+
+const myObj = JSON.parse(text);
+console.log(myObj);
