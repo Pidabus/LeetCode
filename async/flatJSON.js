@@ -1669,5 +1669,5 @@ const flatJSON = `
   }
 }`;
 
-const obj = JSON.parse(flatJSON);
+const obj = JSON.parse(flatJSON); 
 console.log(obj);
