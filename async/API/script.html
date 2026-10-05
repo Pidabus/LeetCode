@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="#">
+    <h1>
+        CAR
+    </h1>
+    <script>
+        const img = document.querySelector('img');
+
+        fetch('https://api.giphy.com/v1/gifs/translate?api_key=UZTQmsR6fNX43oD91YpXmdhvfnXg7vyf&s=cats&rating=g')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (response) {
+                img.src = response.data.images.original.url;
+            });
+
+    </script>
+
+</body>
+
+</html>
