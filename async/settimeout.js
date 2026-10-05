@@ -1,12 +1,12 @@
-console.log('Hi 1');
+// console.log('Hi 1');
 
-setTimeout((() => {
-    return () => {
-    console.log("Hi 2");
-    }
-})(), 5000);
+// setTimeout((() => {
+//     return () => {
+//     console.log("Hi 2");
+//     }
+// })(), 5000);
 
-console.log("Hi 3");
+// console.log("Hi 3");
 
 // (() => {
 //     console.log((() => {
@@ -14,6 +14,8 @@ console.log("Hi 3");
 // }) ());
 // })();
 
-setTimeout(() => {
-    console.log("Hi 2");
-}, 5000);
+// setTimeout(() => {
+//     console.log("Hi 2");
+// }, 5000);
+
+setTimeout(console.log("Hi no timeout??"), 5000);
