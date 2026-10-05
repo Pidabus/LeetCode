@@ -13,3 +13,7 @@ console.log("Hi 3");
 //     console.log('test');
 // }) ());
 // })();
+
+setTimeout(() => {
+    console.log("Hi 2");
+}, 5000);
