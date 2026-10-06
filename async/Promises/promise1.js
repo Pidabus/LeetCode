@@ -1,4 +1,4 @@
-let p = new Promise((resolve, reject) => {
+let p = new Promise((resolve, reject) => { // The function passed in inside the Promise constructor is called the executor
     let a = 3;
     if (a === 2) {
         resolve('Success');
