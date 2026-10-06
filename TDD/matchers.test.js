@@ -15,3 +15,9 @@ test('zero', () => {
   expect(z).not.toBeTruthy();
   expect(z).toBeFalsy();
 });
+
+test('object assignment', () => { // .toEqual recursively checks each property & value of the object. 
+  const data = {one: 1};
+  data.two = 2;
+  expect(data).toEqual({one: 1, two: 2});
+});
