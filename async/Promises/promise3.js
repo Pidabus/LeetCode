@@ -1,5 +1,6 @@
 new Promise((resolve, reject) => {
-  setTimeout(() => resolve("success"), 2000);
+  setTimeout(() => reject(new Error('Error returned')), 2000);
 })
-.finally(() => console.log('Promise fullfilled'))
-.then(message => console.log(message));
+.finally(() => console.log('Promise settled'))
+.then(message => console.log(message))
+.catch(error => console.error(error));
